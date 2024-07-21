@@ -40,11 +40,11 @@
         <td th:utext="${user.lastName}">Doe</td>
         <td th:utext="${user.age}">25</td>
         <td>
-            <form action="/delete" method="post" style="display:inline;">
+            <form action="/PP2_3_1/delete" method="post" style="display:inline;">
                 <input type="hidden" name="id" th:value="${user.id}">
                 <input type="submit" value="Удалить">
             </form>
-            <form action="/update" method="post" class="update-form">
+            <form action="/PP2_3_1/update" method="post" class="update-form">
                 <input type="hidden" name="id" th:value="${user.id}">
                 <input type="text" name="firstName" th:uvalue="${user.firstName}" required placeholder="Имя">
                 <input type="text" name="lastName" th:uvalue="${user.lastName}" required placeholder="Фамилия">
@@ -54,6 +54,6 @@
         </td>
     </tr>
 </table>
-<a href="/register">Зарегистрировать нового пользователя</a>
+<a href="/PP2_3_1/register">Зарегистрировать нового пользователя</a>
 </body>
 </html>
