@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Success</title>
+</head>
+<body>
+<h2>Вы зарегистрировали нового пользователя!</h2>
+<form action="/registration-success" method="get">
+    <p>Пользователь <span th:text="${firstName}">First Name</span>
+        <span th:text="${lastName}">Last Name</span>,
+        возраст <span th:text="${age}">Age</span>,
+        успешно зарегистрирован.</p>
+</form>
+<a href="/register">Зарегистрировать еще одного пользователя<br></a>
+<br>
+<a href="/users">Список пользователей</a>
+</body>
+</html>
